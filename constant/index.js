@@ -1,1 +1,1 @@
-export const  apiKey = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMTVlMmFmMjRlNTM1YzVhNzAwZGEwNDE5NDE5NDcyYiIsIm5iZiI6MTc1NTA5MDQ1Mi41Nywic3ViIjoiNjg5YzhlMTQzOGZiOTQ3MWRhNWU0M2U3Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.YAaNg5qTJ8SQResWAgnly16I6o039aWdlF3mDQaOUHc';
+export const  apiKey = '';  //TMDB API Key Need
