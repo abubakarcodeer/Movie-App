@@ -1,50 +1,43 @@
-# Welcome to Expo app 👋
+# React Native Movie App using Movie Database API
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project demonstrates how to build a **Movie App** using **React Native** and **The Movie Database (TMDb) API** to fetch and display movie data such as popular movies, top-rated movies, and movie details.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+* Display popular and top-rated movies
+* Search movies by name
+* View detailed movie information (title, synopsis, release date, rating, poster)
+* Responsive UI for both Android and iOS
+* Uses TMDb API
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
+## 🧩 Technologies Used
 
-   ```bash
-   npx expo start
-   ```
+* React Native
+* TypeScript
+* Fetch API
+* The Movie Database (TMDb) API
+* React Navigation
+* Expo
 
-In the output, you'll find options to open the app in a
+## 🔑 Getting an API Key
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. Go to [TMDb website](https://www.themoviedb.org/)
+2. Create a free account
+3. Navigate to **API** section
+4. Generate your API key
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## ⚙️ API Endpoints Used
 
-## Get a fresh project
+* **Popular Movies:**  `https://api.themoviedb.org/3/movie/popular?api_key={API_KEY}&language=en-US&page=1`
+* **Top Rated Movies:** `https://api.themoviedb.org/3/movie/top_rated?api_key={API_KEY}&language=en-US&page=1`
+* **Search Movies:** `https://api.themoviedb.org/3/search/movie?api_key={API_KEY}&query={MOVIE_NAME}`
+* **Movie Details:** `https://api.themoviedb.org/3/movie/{MOVIE_ID}?api_key={API_KEY}&language=en-US`
 
-When you're ready, run:
+## ❗ Common Errors
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+| Error | Reason            |
+| ----- | ----------------- |
+| 401   | Invalid API Key   |
+| 404   | Movie not found   |
+| 429   | Too many requests |
