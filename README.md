@@ -15,7 +15,7 @@ This project demonstrates how to build a **Movie App** using **React Native** an
 
 * React Native
 * TypeScript
-* Fetch API
+* axios API
 * The Movie Database (TMDb) API
 * React Navigation
 * Expo
